@@ -1,0 +1,17 @@
+A small javascript that scrolls a menu with the window, when a user scrolls
+down a long page.
+
+To use the script, simply use the following code snippet:
+
+    $('#my-menu').floatmenu();
+
+The menu will now be directly below the browser's inner top.
+
+You can also add extra padding, by giving an option to the plugin:
+
+    $('#my-menu').floatmenu({topPadding: 10});
+
+The menu will now be 10pixels below the browser's inner top at all times.
+
+You can also try out the index.html file, to see a working example (remember to
+download this script as well)
