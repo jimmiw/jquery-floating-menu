@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Floating menu script test</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+  <script src="jquery.floating-menu.js" type="text/javascript"></script>
+  <style type="text/css">
+  body, html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  #wrap {
+    margin: 0 auto;
+    width: 960px;
+  }
+  
+  .menu-container {
+    float: left;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+  }
+  .menu {
+    border: 1px solid #cdcdcd;
+    width: 200px;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 4px 4px 4px #efefef;
+    -webkit-box-shadow: 4px 4px 4px #efefef;
+    box-shadow: 4px 4px 4px #efefef;
+  }
+  
+  #main-content {
+    width: 690px;
+    margin-left: 20px;
+    float: left;
+    overflow: hidden;
+  } 
+  
+  #main-content #contents {
+    padding: 10px 20px;
+    
+    border: 1px solid #cdcdcd;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 4px 4px 4px #efefef;
+    -webkit-box-shadow: 4px 4px 4px #efefef;
+    box-shadow: 4px 4px 4px #efefef;
+  }
+  
+  pre {
+    background: #EFEFEF;
+    font: 11px/15px Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    white-space: pre;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #DDD;
+    clear: both;
+  }
+  code {
+    padding: 3px;
+  }
+  
+  #footer {
+    text-align: center;
+    margin: 10px 0;
+    color: #5a5a5a;
+    font-size: 80%;
+  }
+  #footer a {
+    color: #1f1f1f;
+  }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <ul class="menu">
+      <li>
+        <a href="#">menu item 1</a>
+      </li>
+      <li>
+        <a href="#">menu item 2</a>
+      </li>
+      <li>
+        <a href="#">menu item 3</a>
+      </li>
+      <li>
+        <a href="#">menu item 4</a>
+      </li>
+    </ul>
+    <span>&nbsp;</span>
+  </div>
+  
+  <div id="main-content">
+    <div id="contents">
+      <h1>Floating menu plugin tests!</h1>
+    
+      <p>
+        This test is just to prove that the script actually works.<br/>
+        I hope you have fun with the script and share it with others.<br/>
+        <br/>
+        More information about this script:<br/>
+        <ul>
+          <li><a href="http://github.com/jimmiw/jquery-floating-menu">This script</a></li>
+          <li><a href="http://github.com/jimmiw">My github profile</a> with lots of scripts etc</li>
+          <li>My homepage, <a href="http://westsworld.dk">westsworld.dk</a></li>
+        </ul>
+      </p>
+      
+      <p>
+        To make it all work, just use the following code:<br/>
+        <pre><code>&lt;script type="text/javascript"&gt;
+  $('.menu').floatmenu();
+&lt;/script&gt;</code></pre>
+      </p>
+      
+      <h2>Lots of Lorem ipsum text...</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem eros, venenatis et pretium dignissim, molestie non justo. Morbi enim lorem, consectetur id pharetra quis, pretium semper lacus. Donec quis velit lacus. Donec vulputate, lorem tempus laoreet lacinia, massa metus laoreet lectus, suscipit lacinia nulla magna vitae mauris. Aenean justo nunc, ullamcorper in vehicula quis, ultrices nec tortor. Aliquam eget ante eu felis hendrerit consequat. Phasellus vitae commodo eros. Nam sed mauris eget velit tincidunt tincidunt dictum commodo nibh. Nullam iaculis lorem sit amet nunc vehicula at gravida est suscipit. Curabitur bibendum eros at odio scelerisque ut feugiat diam eleifend. Sed vitae ipsum quis orci mattis venenatis blandit sit amet velit. Phasellus scelerisque dolor a mauris convallis in congue arcu convallis. Pellentesque lacinia ullamcorper sem at facilisis. Proin sed mauris quis leo auctor porta.
+      </p>
+      <p>
+        Curabitur auctor lacinia nunc sit amet tempus. Vivamus rhoncus, orci in luctus vehicula, felis quam scelerisque magna, nec tincidunt tortor erat sit amet metus. In hac habitasse platea dictumst. Aliquam feugiat odio et augue ultricies a adipiscing elit mollis. Aenean non orci ultrices nisi tristique tincidunt. Cras ac libero eu ligula facilisis convallis in vitae nisl. Ut lacinia, lectus quis hendrerit ultrices, neque diam lacinia eros, nec lobortis sem dolor et est. Nullam sit amet nisi lectus, nec lacinia orci. Nulla facilisi. Ut pharetra, purus eget porta tincidunt, eros lectus pharetra justo, et mattis dolor purus id velit. Sed at dui nec nulla varius aliquam eget et velit. Nulla quis mollis est. Nunc massa urna, consectetur a molestie sit amet, vestibulum ut risus. Aenean non libero tortor, at mollis nunc. Donec et nisl lacus, porta elementum magna. In ultrices imperdiet dictum. Ut ut rutrum ipsum. Praesent rhoncus lacus vitae augue rutrum nec condimentum erat vehicula.
+      </p>
+        Cras porttitor sagittis sodales. Suspendisse vel nulla a mauris faucibus tristique. Proin sem lectus, ultrices vel elementum at, eleifend vitae ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent massa nunc, dignissim et porttitor ac, consequat vel augue. Nulla at felis neque, sit amet malesuada nunc. Morbi nisi massa, posuere sed ornare viverra, interdum eu tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut interdum urna. Etiam augue urna, laoreet eu vulputate et, tincidunt eget metus. Pellentesque eget fermentum quam. Sed et turpis in urna lobortis gravida. Sed imperdiet consectetur turpis, at mattis ipsum dictum ut. Nullam ultricies tristique sapien vel euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque gravida dui non auctor. Aenean viverra urna vitae purus ullamcorper tristique. Integer et augue non orci accumsan semper eu id purus.
+      </p>
+      <p>
+        Etiam risus dolor, laoreet a commodo eget, aliquet vel magna. Nullam venenatis ornare erat et bibendum. Curabitur quam lacus, faucibus sit amet molestie id, pharetra eu mi. Maecenas tempor pulvinar metus, elementum dignissim erat consectetur a. Phasellus justo mauris, placerat sed malesuada id, eleifend non libero. Morbi in congue libero. Sed bibendum porttitor felis pellentesque adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan dapibus risus ultricies lacinia. Maecenas tempor nunc sed metus viverra ac dignissim erat rhoncus. Vestibulum id massa sapien, a ultrices felis. Morbi arcu mi, aliquet vel malesuada rutrum, porttitor non tellus. Duis ut felis quis augue volutpat hendrerit. Nam aliquam, enim rhoncus viverra malesuada, dui mauris bibendum turpis, in vestibulum orci nulla sit amet ligula.
+      </p>
+      <p>
+        Vivamus vestibulum pulvinar felis. Donec vel lectus vitae neque tempor pellentesque malesuada vitae odio. Vestibulum dictum adipiscing risus et dignissim. Vestibulum nec felis ac enim venenatis posuere in vel massa. Duis faucibus risus nec mauris vestibulum at facilisis urna viverra. In et sem nunc. Donec vitae felis magna. Aenean sollicitudin orci sit amet sapien ultricies consequat posuere elit tristique. Morbi hendrerit massa nec purus ornare et sodales erat vehicula. Phasellus pharetra nulla sed tortor aliquam mattis sagittis leo venenatis. Nunc lobortis dictum turpis vel accumsan.
+      </p>
+    </div>
+    
+    <div id="footer">
+      Lorem Ipsum text from <a href="http://www.lipsum.com/">lipsum.com</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('.menu').floatmenu();
+    });
+  </script>
+</body>
+</html>
